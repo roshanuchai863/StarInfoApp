@@ -22,7 +22,8 @@
 		01760CEF2AF63D4800B1C7C5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 01760CEE2AF63D4800B1C7C5 /* FirebaseDatabase */; };
 		01760CF12AF63D4800B1C7C5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 01760CF02AF63D4800B1C7C5 /* FirebaseFirestore */; };
 		01760CF32AF63D4800B1C7C5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 01760CF22AF63D4800B1C7C5 /* FirebaseStorage */; };
-		018115A42AF711A500C70597 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018115A32AF711A500C70597 /* HomeViewController.swift */; };
+		33615FCB2B0091B70020C2EF /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33615FCA2B0091B70020C2EF /* HomeTableViewController.swift */; };
+		33615FCF2B00BB9E0020C2EF /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33615FCE2B00BB9E0020C2EF /* HomeTableViewCell.swift */; };
 		3368FB092AFEC7240069AD6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3368FB082AFEC7230069AD6E /* Main.storyboard */; };
 		3383D5D02AFF891A002F41D1 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383D5CF2AFF891A002F41D1 /* LoginTableViewController.swift */; };
 		3383D5D22AFF892F002F41D1 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383D5D12AFF892F002F41D1 /* SignUpTableViewController.swift */; };
@@ -61,7 +62,8 @@
 		01760CDA2AF63CA900B1C7C5 /* StarInfoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarInfoAppUITests.swift; sourceTree = "<group>"; };
 		01760CDC2AF63CA900B1C7C5 /* StarInfoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarInfoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01760CE92AF63CD400B1C7C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		018115A32AF711A500C70597 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		33615FCA2B0091B70020C2EF /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		33615FCE2B00BB9E0020C2EF /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		3368FB082AFEC7230069AD6E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3383D5CF2AFF891A002F41D1 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		3383D5D12AFF892F002F41D1 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
@@ -123,9 +125,10 @@
 				01760CB92AF63CA600B1C7C5 /* AppDelegate.swift */,
 				01760CBB2AF63CA600B1C7C5 /* SceneDelegate.swift */,
 				01760CBD2AF63CA600B1C7C5 /* ViewController.swift */,
-				018115A32AF711A500C70597 /* HomeViewController.swift */,
+				33615FCE2B00BB9E0020C2EF /* HomeTableViewCell.swift */,
 				01708B862AF8F03E00C0A99E /* StarInfo.swift */,
 				3368FB082AFEC7230069AD6E /* Main.storyboard */,
+				33615FCA2B0091B70020C2EF /* HomeTableViewController.swift */,
 				3383D5CF2AFF891A002F41D1 /* LoginTableViewController.swift */,
 				3383D5D12AFF892F002F41D1 /* SignUpTableViewController.swift */,
 				01708B882AF8F6E100C0A99E /* StarRepository.swift */,
@@ -299,7 +302,8 @@
 				01760CBA2AF63CA600B1C7C5 /* AppDelegate.swift in Sources */,
 				01708B872AF8F03E00C0A99E /* StarInfo.swift in Sources */,
 				01760CBC2AF63CA600B1C7C5 /* SceneDelegate.swift in Sources */,
-				018115A42AF711A500C70597 /* HomeViewController.swift in Sources */,
+				33615FCF2B00BB9E0020C2EF /* HomeTableViewCell.swift in Sources */,
+				33615FCB2B0091B70020C2EF /* HomeTableViewController.swift in Sources */,
 				3383D5D02AFF891A002F41D1 /* LoginTableViewController.swift in Sources */,
 				3383D5D22AFF892F002F41D1 /* SignUpTableViewController.swift in Sources */,
 			);

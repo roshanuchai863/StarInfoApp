@@ -38,7 +38,7 @@ class SignUpTableViewController: UITableViewController {
             else{
                 print("signup successful")
                 // self.present(alert, animated: true, completion: nil)
-                //self.performSegue(withIdentifier: "SignUpToHome", sender: sender)
+              self.performSegue(withIdentifier: "SignUpToHome", sender: nil)
                 
             }
         }}
