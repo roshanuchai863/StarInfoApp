@@ -101,10 +101,10 @@ class HomeTableViewController: UITableViewController {
     }
     
     
-    @IBAction func unwindToHomeTableViewController(_ unwindSegue: UIStoryboardSegue) {
+    @IBAction func unwindToEditView(_ unwindSegue: UIStoryboardSegue) {
         let sourceViewController = unwindSegue.source
         
-        if let EdistarScreen = sourceViewController as? EditStarTableViewController {
+        if let EditStarScreen =  sourceViewController as? EditStarTableViewController {
             
             if StarInformation.update(starInfo: self.selectedStar){
                 print("Edited data Saved")
@@ -112,4 +112,23 @@ class HomeTableViewController: UITableViewController {
         }
     }
 
+    
+    // unwind after Signup success
+    @IBAction func unwindToSignUp(_ unwindSegue: UIStoryboardSegue) {
+        let sourceViewController = unwindSegue.source
+        
+        if let SignUpScreen = sourceViewController as? SignUpTableViewController {
+            
+            
+                print("return from sign up page")
+            
+        }
+    }
+    
+    // unwind after login success
+    @IBAction func unwindToHomeTableViewControllerfromLogin(_ unwindSegue: UIStoryboardSegue) {
+        let sourceViewController = unwindSegue.source
+        
+    }
+    
 }

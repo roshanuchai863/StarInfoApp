@@ -22,25 +22,41 @@ class SignUpTableViewController: UITableViewController {
 
 
     }
-    @IBAction func SignUp(_ sender: UIButton) {
-        
-        let email = EmailTextField.text
-        let password = PasswordTextField.text
-        
-        let alert = UIAlertController(title: "Successful", message: "\( email!) has been created successfully", preferredStyle:.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default))
-        
-        Auth.auth().createUser(withEmail: email!, password: password!) { authResult, error in
-            
-            if let e = error{
-                print("Error, \(e)")
-            }
-            else{
-                print("signup successful")
-                // self.present(alert, animated: true, completion: nil)
-              self.performSegue(withIdentifier: "SignUpToHome", sender: nil)
-                
-            }
-        }}
 
+    
+    @IBAction func dosomehting(_ sender: UIButton) {
+        print("Button is clicked")
+    }
+    //    // MARK: - Navigation
+//
+//    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destination.
+//        // Pass the selected object to the new view controller.
+//        
+//                if segue.destination is SignUpTableViewController
+//                {
+//                    let email = EmailTextField.text
+//                    let password = PasswordTextField.text
+//        
+//                    let alert = UIAlertController(title: "Successful", message: "\( email!) has been created successfully", preferredStyle:.alert)
+//                    alert.addAction(UIAlertAction(title: "Ok", style: .default))
+//        
+//                    Auth.auth().createUser(withEmail: email!, password: password!) { authResult, error in
+//        
+//                        if let e = error{
+//                            print("Error, \(e)")
+//                        }
+//                        else{
+//                            print("signup successful")
+//                            // self.present(alert, animated: true, completion: nil)
+//                          self.performSegue(withIdentifier: "unwindToHomeTableViewControllerfromSignUp", sender: nil)
+//        
+//                        }
+//                    }
+//                }
+//        
+//                print("")
+//            }
 }
+
