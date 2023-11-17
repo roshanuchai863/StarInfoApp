@@ -11,7 +11,6 @@
 		01708B892AF8F6E100C0A99E /* StarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01708B882AF8F6E100C0A99E /* StarRepository.swift */; };
 		01760CBA2AF63CA600B1C7C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01760CB92AF63CA600B1C7C5 /* AppDelegate.swift */; };
 		01760CBC2AF63CA600B1C7C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01760CBB2AF63CA600B1C7C5 /* SceneDelegate.swift */; };
-		01760CBE2AF63CA600B1C7C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01760CBD2AF63CA600B1C7C5 /* ViewController.swift */; };
 		01760CC32AF63CA900B1C7C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01760CC22AF63CA900B1C7C5 /* Assets.xcassets */; };
 		01760CC62AF63CA900B1C7C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01760CC42AF63CA900B1C7C5 /* LaunchScreen.storyboard */; };
 		01760CD12AF63CA900B1C7C5 /* StarInfoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01760CD02AF63CA900B1C7C5 /* StarInfoAppTests.swift */; };
@@ -22,6 +21,8 @@
 		01760CEF2AF63D4800B1C7C5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 01760CEE2AF63D4800B1C7C5 /* FirebaseDatabase */; };
 		01760CF12AF63D4800B1C7C5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 01760CF02AF63D4800B1C7C5 /* FirebaseFirestore */; };
 		01760CF32AF63D4800B1C7C5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 01760CF22AF63D4800B1C7C5 /* FirebaseStorage */; };
+		3345C5602B072DF700B61EE1 /* ViewStarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3345C55F2B072DF700B61EE1 /* ViewStarTableViewController.swift */; };
+		3345C5622B07404200B61EE1 /* EditStarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3345C5612B07404200B61EE1 /* EditStarTableViewController.swift */; };
 		33615FCB2B0091B70020C2EF /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33615FCA2B0091B70020C2EF /* HomeTableViewController.swift */; };
 		33615FCF2B00BB9E0020C2EF /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33615FCE2B00BB9E0020C2EF /* HomeTableViewCell.swift */; };
 		3368FB092AFEC7240069AD6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3368FB082AFEC7230069AD6E /* Main.storyboard */; };
@@ -52,7 +53,6 @@
 		01760CB62AF63CA600B1C7C5 /* StarInfoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarInfoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01760CB92AF63CA600B1C7C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01760CBB2AF63CA600B1C7C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		01760CBD2AF63CA600B1C7C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01760CC22AF63CA900B1C7C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01760CC52AF63CA900B1C7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01760CC72AF63CA900B1C7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +62,8 @@
 		01760CDA2AF63CA900B1C7C5 /* StarInfoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarInfoAppUITests.swift; sourceTree = "<group>"; };
 		01760CDC2AF63CA900B1C7C5 /* StarInfoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarInfoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01760CE92AF63CD400B1C7C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3345C55F2B072DF700B61EE1 /* ViewStarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStarTableViewController.swift; sourceTree = "<group>"; };
+		3345C5612B07404200B61EE1 /* EditStarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStarTableViewController.swift; sourceTree = "<group>"; };
 		33615FCA2B0091B70020C2EF /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		33615FCE2B00BB9E0020C2EF /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		3368FB082AFEC7230069AD6E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -122,9 +124,10 @@
 			isa = PBXGroup;
 			children = (
 				01760CE92AF63CD400B1C7C5 /* GoogleService-Info.plist */,
+				3345C55F2B072DF700B61EE1 /* ViewStarTableViewController.swift */,
 				01760CB92AF63CA600B1C7C5 /* AppDelegate.swift */,
 				01760CBB2AF63CA600B1C7C5 /* SceneDelegate.swift */,
-				01760CBD2AF63CA600B1C7C5 /* ViewController.swift */,
+				3345C5612B07404200B61EE1 /* EditStarTableViewController.swift */,
 				33615FCE2B00BB9E0020C2EF /* HomeTableViewCell.swift */,
 				01708B862AF8F03E00C0A99E /* StarInfo.swift */,
 				3368FB082AFEC7230069AD6E /* Main.storyboard */,
@@ -297,12 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3345C5622B07404200B61EE1 /* EditStarTableViewController.swift in Sources */,
 				01708B892AF8F6E100C0A99E /* StarRepository.swift in Sources */,
-				01760CBE2AF63CA600B1C7C5 /* ViewController.swift in Sources */,
 				01760CBA2AF63CA600B1C7C5 /* AppDelegate.swift in Sources */,
 				01708B872AF8F03E00C0A99E /* StarInfo.swift in Sources */,
 				01760CBC2AF63CA600B1C7C5 /* SceneDelegate.swift in Sources */,
 				33615FCF2B00BB9E0020C2EF /* HomeTableViewCell.swift in Sources */,
+				3345C5602B072DF700B61EE1 /* ViewStarTableViewController.swift in Sources */,
 				33615FCB2B0091B70020C2EF /* HomeTableViewController.swift in Sources */,
 				3383D5D02AFF891A002F41D1 /* LoginTableViewController.swift in Sources */,
 				3383D5D22AFF892F002F41D1 /* SignUpTableViewController.swift in Sources */,

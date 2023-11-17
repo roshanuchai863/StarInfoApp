@@ -52,7 +52,7 @@ class HomeTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "contactIdentifier", for: indexPath) as! HomeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "startIdentifier", for: indexPath) as! HomeTableViewCell
 
         // Configure the cell...
         let starInfo = StarInfos[indexPath.row]
@@ -88,10 +88,28 @@ class HomeTableViewController: UITableViewController {
         return cell
     }
     
-//    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-//        self.selectedContact = contacts[indexPath.row]
-//        return indexPath
-//    }
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        self.selectedStar = StarInfos[indexPath.row]
+        return indexPath
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let viewStarTVC = segue.destination as? ViewStarTableViewController{
+            viewStarTVC.starInfo = selectedStar
+        }
+    }
+    
+    
+    @IBAction func unwindToHomeTableViewController(_ unwindSegue: UIStoryboardSegue) {
+        let sourceViewController = unwindSegue.source
+        
+        if let EdistarScreen = sourceViewController as? EditStarTableViewController {
+            
+            if StarInformation.update(starInfo: self.selectedStar){
+                print("Edited data Saved")
+            }
+        }
+    }
 
 }
