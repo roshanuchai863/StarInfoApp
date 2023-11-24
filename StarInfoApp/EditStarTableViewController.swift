@@ -38,6 +38,7 @@ class EditStarTableViewController: UITableViewController {
             if UIImage(named: starInfo.Image) != nil{
                 StarImageView.image = UIImage(named: starInfo.Image)
             }}
+        
             FirstNameTextField.text = "\(starInfo.Name)"
             OccupationTextField.text = "\(starInfo.Occupation)"
             BornDateTextField.text = "\(starInfo.Born)"
@@ -106,7 +107,9 @@ class EditStarTableViewController: UITableViewController {
         if let HomeTableViewController = segue.destination as? HomeTableViewController
         {
             // set the altered data in out locatl starinfo object
-            starInfo.Name = FirstNameTextField.text!
+            let firstName = FirstNameTextField.text!
+            let LastName = lastNameTextField.text!
+            starInfo.Name = "\(firstName) \(LastName)"
             starInfo.Born = BornDateTextField.text!
             starInfo.Occupation = OccupationTextField.text!
             starInfo.Nationality = NationalityTextField.text!

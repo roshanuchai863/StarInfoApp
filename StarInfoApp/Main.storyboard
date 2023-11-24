@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gbu-B9-v7d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fN6-PL-dbl">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -330,7 +330,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ei-OX-LCW">
-                                                            <rect key="frame" x="91.333333333333357" y="0.0" width="117.66666666666664" height="28"/>
+                                                            <rect key="frame" x="91.333333333333371" y="0.0" width="117.66666666666663" height="28"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="dd/mm/yyyy"/>
                                                         </button>
@@ -450,15 +450,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LastName" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9u5-EJ-b5T">
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LastName" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9u5-EJ-b5T">
                                                     <rect key="frame" x="16" y="5" width="288" height="34.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9u5-EJ-b5T" firstAttribute="centerY" secondItem="wTl-nn-pjA" secondAttribute="centerY" id="X96-Uy-0SP"/>
-                                                <constraint firstItem="9u5-EJ-b5T" firstAttribute="centerX" secondItem="wTl-nn-pjA" secondAttribute="centerX" id="gkt-bc-hnK"/>
+                                                <constraint firstItem="9u5-EJ-b5T" firstAttribute="leading" secondItem="wTl-nn-pjA" secondAttribute="leading" constant="16" id="8Fo-Dz-Kb9"/>
+                                                <constraint firstAttribute="trailing" secondItem="9u5-EJ-b5T" secondAttribute="trailing" constant="16" id="zV7-Sl-vv4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -978,15 +978,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LastName" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jFU-1X-j98">
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LastName" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jFU-1X-j98">
                                                     <rect key="frame" x="16" y="5" width="288" height="34.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="jFU-1X-j98" firstAttribute="centerY" secondItem="2pw-XB-nku" secondAttribute="centerY" id="Pbs-QY-RlA"/>
-                                                <constraint firstItem="jFU-1X-j98" firstAttribute="centerX" secondItem="2pw-XB-nku" secondAttribute="centerX" id="VGP-T4-O07"/>
+                                                <constraint firstItem="jFU-1X-j98" firstAttribute="leading" secondItem="2pw-XB-nku" secondAttribute="leading" constant="16" id="PfV-VI-Brn"/>
+                                                <constraint firstAttribute="trailing" secondItem="jFU-1X-j98" secondAttribute="trailing" constant="16" id="qTi-PW-32e"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

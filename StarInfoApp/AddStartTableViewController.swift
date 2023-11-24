@@ -86,7 +86,7 @@ class AddStartTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         let firstName = FirstNameTxtField.text!
         let LastName = lastNameTxtField.text!
-        let FullName = "\(firstName) \(LastName)";
+        let FullName = "\(firstName) \(LastName)"
         let Occupation = OccupationTxtField.text!
         let Nationality = NationalityTxtField.text!
         let Birthplace = BirthplaceTxtField.text!
