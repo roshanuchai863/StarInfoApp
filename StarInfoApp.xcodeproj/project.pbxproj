@@ -28,6 +28,7 @@
 		3368FB092AFEC7240069AD6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3368FB082AFEC7230069AD6E /* Main.storyboard */; };
 		3383D5D02AFF891A002F41D1 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383D5CF2AFF891A002F41D1 /* LoginTableViewController.swift */; };
 		3383D5D22AFF892F002F41D1 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383D5D12AFF892F002F41D1 /* SignUpTableViewController.swift */; };
+		33A3B2D32B1034F5009FDFF9 /* AddStartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3B2D22B1034F5009FDFF9 /* AddStartTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		3368FB082AFEC7230069AD6E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3383D5CF2AFF891A002F41D1 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		3383D5D12AFF892F002F41D1 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
+		33A3B2D22B1034F5009FDFF9 /* AddStartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStartTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				01760CB92AF63CA600B1C7C5 /* AppDelegate.swift */,
 				01760CBB2AF63CA600B1C7C5 /* SceneDelegate.swift */,
 				3345C5612B07404200B61EE1 /* EditStarTableViewController.swift */,
+				33A3B2D22B1034F5009FDFF9 /* AddStartTableViewController.swift */,
 				33615FCE2B00BB9E0020C2EF /* HomeTableViewCell.swift */,
 				01708B862AF8F03E00C0A99E /* StarInfo.swift */,
 				3368FB082AFEC7230069AD6E /* Main.storyboard */,
@@ -304,6 +307,7 @@
 				01708B892AF8F6E100C0A99E /* StarRepository.swift in Sources */,
 				01760CBA2AF63CA600B1C7C5 /* AppDelegate.swift in Sources */,
 				01708B872AF8F03E00C0A99E /* StarInfo.swift in Sources */,
+				33A3B2D32B1034F5009FDFF9 /* AddStartTableViewController.swift in Sources */,
 				01760CBC2AF63CA600B1C7C5 /* SceneDelegate.swift in Sources */,
 				33615FCF2B00BB9E0020C2EF /* HomeTableViewCell.swift in Sources */,
 				3345C5602B072DF700B61EE1 /* ViewStarTableViewController.swift in Sources */,

@@ -25,7 +25,27 @@ class SignUpTableViewController: UITableViewController {
 
     
     @IBAction func dosomehting(_ sender: UIButton) {
-        print("Button is clicked")
+        
+        let email = EmailTextField.text
+       let password = PasswordTextField.text
+       
+                           let alert = UIAlertController(title: "Successful", message: "\( email!) has been created successfully", preferredStyle:.alert)
+                           alert.addAction(UIAlertAction(title: "Ok", style: .default))
+       
+                           Auth.auth().createUser(withEmail: email!, password: password!) { authResult, error in
+       
+                               if let e = error{
+                                   print("Error, \(e)")
+                               }
+                               else{
+                                   print("signup successful")
+                                   let homeViewController = self.storyboard?.instantiateViewController(identifier: "HomeNC") as? UINavigationController
+                                               self.view.window?.rootViewController = homeViewController
+                                               self.view.window?.makeKeyAndVisible()
+       
+                               }
+                           }
+       
     }
     //    // MARK: - Navigation
 //

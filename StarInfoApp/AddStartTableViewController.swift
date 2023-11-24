@@ -1,60 +1,34 @@
 //
-//  LoginTableViewController.swift
+//  AddStartTableViewController.swift
 //  StarInfoApp
 //
-//  Created by Roshan Uchai on 11/11/2023.
+//  Created by Roshan Uchai on 24/11/2023.
 //
 
 import UIKit
-import Firebase
-class LoginTableViewController: UITableViewController {
 
+class AddStartTableViewController: UITableViewController {
+    @IBOutlet weak var FirstNameTxtField: UITextField!
+    @IBOutlet weak var lastNameTxtField: UITextField!
+    @IBOutlet weak var DOBTxtField: UITextField!
+    @IBOutlet weak var BirthplaceTxtField: UITextField!
+    @IBOutlet weak var NationalityTxtField: UITextField!
+    @IBOutlet weak var OccupationTxtField: UITextField!
     
-    @IBOutlet weak var PasswordTextField: UITextField!
-    @IBOutlet weak var EmailTextField: UITextField!
-        
+    @IBOutlet weak var imageName: UITextField!
+    var starInfo : StarInfo!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-              
-    }
-    
-    
-    @IBAction func loginBtn(_ sender: UIButton) {
-        let email = EmailTextField.text
-        let password = PasswordTextField.text
-        let alert = UIAlertController(title: "Login Failed", message: "\(email!) doesn't Exist", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default))
 
-        Auth.auth().signIn(withEmail: email!, password: password!) { authResult, error in
-            if let e = error {
-                print("Login Failed! \(e)")
-                self.present(alert, animated: true, completion: nil)
-            } else {
-                print("Login successful")
-                // Move the code for successful login here
-                let homeViewController = self.storyboard?.instantiateViewController(identifier: "HomeNC") as? UINavigationController
-                self.view.window?.rootViewController = homeViewController
-                self.view.window?.makeKeyAndVisible()
-            }
-        }
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-  
-
     
-    
-//    // MARK: - Table view data source
-//
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-//
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // #warning Incomplete implementation, return the number of rows
-//        return 0
-//    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,7 +38,9 @@ class LoginTableViewController: UITableViewController {
 
         return cell
     }
-    */
+     @IBAction func firstNameTextField(_ sender: Any) {
+     }
+     */
 
     /*
     // Override to support conditional editing of the table view.
@@ -101,17 +77,34 @@ class LoginTableViewController: UITableViewController {
     }
     */
 
-    /*
+ 
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let firstName = FirstNameTxtField.text!
+        let LastName = lastNameTxtField.text!
+        let FullName = "\(firstName) \(LastName)";
+        let Occupation = OccupationTxtField.text!
+        let Nationality = NationalityTxtField.text!
+        let Birthplace = BirthplaceTxtField.text!
+        let imageName = imageName.text!
+        let Born = DOBTxtField.text!
+        
+        starInfo = StarInfo(Name: FullName, Born: Born, Nationality: Nationality, Occupation: Occupation, Birthplace: Birthplace, Image: imageName)
+        
+        if let homeViewtableController = segue.destination as? HomeTableViewController{
+            homeViewtableController.selectedStar = starInfo
+            
+            
+        }
+        
+        
+        
+        
     }
-    */
-    
-    
     
 
 }
